@@ -1,0 +1,8 @@
+.About {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-area: 2 / 1;
+  background: url('../../Images/Backgrounds/component-bg.png') no-repeat center center fixed;
+  background-size: cover;
+}
