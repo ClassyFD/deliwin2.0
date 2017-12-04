@@ -9,8 +9,8 @@ import Nav from './Components/Nav/Nav';
 import OpenStore from './Components/OpenStore/OpenStore';
 import ShoppingCart from './Components/ShoppingCart/ShoppingCart';
 import {Switch, Route} from 'react-router';
-import './App.css';
 import { TimelineMax, Power2} from 'gsap';
+import './App.css';
 
 class App extends Component {
   constructor(props) {

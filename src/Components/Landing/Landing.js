@@ -27,8 +27,8 @@ class Landing extends Component {
   
   render() {
     return (
-      <main className='Landing'>
-        <section onClick={(e)=>{this.scrollDown()}} className='landing-title-section'>
+      <main onClick={(e)=>{this.scrollDown()}} className='Landing'>
+        <section className='landing-title-section'>
           <div className='landing-title'>
             DeliWin
           </div>

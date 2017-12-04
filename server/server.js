@@ -62,22 +62,30 @@ passport.use(new auth0Strategy({
         return done(null, { user_id: response[0].user_id })
     } else {
       let name = '',
+          email = '',
           picture = '',
-          userId = ''
+          user_id = '',
+          user_type = 'general',
+          address = '',
+          phone_number = '';
+
       if (profile.displayName) {
         name = profile.displayName;
       } else if (profile.name.givenName && profile.name.familyName) {
         name = profile.name.givenName + ' ' + profile.name.familyName;
       }
       if (profile.identities[0].user_id) {
-        userId = profile.identities[0].user_id;
+        user_id = profile.identities[0].user_id;
       } else if (profile.id) {
-        userId = profile.id;
+        user_id = profile.id;
       }
       if (profile.picture) {
         picture = profile.picture;
       }
-      db.createUser([name, picture, userId]).then((response)=>{
+      if (profile.email) {
+        email = profil.email;
+      }
+      db.createUser([name, email, picture, user_id, user_type, address, phone_number]).then((response)=>{
         return done(null, { user_id: response[0].user_id })
       })
     }
@@ -121,7 +129,7 @@ app.get('/auth/me', cors(corsOptions), (req, res) => {
 });
 
 
-app.get('/auth/logout', (req, res) => {
+app.get('/auth/logout/', (req, res) => {
   req.logOut();
   res.redirect(302,  process.env.REACT_APP_HOST)
 })

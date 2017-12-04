@@ -5,4 +5,100 @@
   grid-area: 2 / 1;
   background: url('../../Images/Backgrounds/component-bg.png') no-repeat center center fixed;
   background-size: cover;
+  align-content: flex-start;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.about-header {
+  width: 100%;
+  height: 110px;
+  background: linear-gradient(180deg,
+  #450404 0,
+  #4c4b5c 0,
+  #943939 1%,
+  #8f3131 5%,
+  #521010 13%,
+  #731717 91%,
+  #611515 92%,
+  #5e1212 93%,
+  #1f2424);
+  border: 2px groove #2f4f4f;
+  display: grid;
+  grid-template: auto / 10% 40% 20% 20% 10%;
+}
+.about-header-deliwin {
+  background: url('../../Images/Icons/deliwin.png') no-repeat center center;
+  background-size: cover;
+  height: 100px;
+  width: 140px;
+  display: grid;
+  grid-area: 1 / 2;
+  cursor: pointer;
+}
+.about-header-about {
+  font-size: 36px;
+  color: white;
+  font-family: 'BloggerSansMedium';
+  display: grid;
+  grid-area: 1 / 3;
+  align-items: center;
+  text-shadow: 1px 1px black, -1px -1px gray;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+}
+.about-main-section {
+  display: flex;
+  flex-direction: column;
+  height: 550px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+.about-title {
+  font-family: 'FuturaBold';
+  color: black;
+  font-size: 36px;
+  text-shadow: 1px 1px white, -1px -1px gray;
+}
+.about-line {
+  height: 20px;
+  width: 80%;
+  background: linear-gradient(top,
+  #450404 0,
+  #4c4b5c 0,
+  #943939 1%,
+  #8f3131 5%,
+  #521010 13%,
+  #731717 91%,
+  #611515 92%,
+  #5e1212 93%,
+  #1f2424);
+}
+.about-description {
+  width: 70%;
+  background: -webkit-linear-gradient(300deg, 
+  #d8e0de 0%,
+  #aebfbc 12%,
+  #99afab 23%,
+  #8ea6a2 50%,
+  #829d98 65%,
+  #4e5c5a 84%,
+  #0e0e0e 100%);
+  border: 5px outset gray;
+  font-size: 24px;
+  text-align: center;
+  padding: 5px;
+  font-family: 'BloggerSansMedium'
+}
+.about-subtitle {
+  font-family: 'FuturaBold';
+  color: black;
+  font-size: 36px;
+  text-shadow: 1px 1px white, -1px -1px gray;
+}
+@media (max-width: 1024px) {
+  .about-description {
+    font-size: 16px;
+  }
 }

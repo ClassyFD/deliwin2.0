@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import { TimelineMax, Power2 } from 'gsap';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import axios from 'axios';
 import './Nav.css'; 
+
+const ENV = require('../../frontenv');
 
 class Nav extends Component {
   constructor(props) {
@@ -13,6 +16,17 @@ class Nav extends Component {
   }
 
   componentDidMount() {
+    const api = axios.create({
+      withCredentials:true
+    });
+    api.get(ENV.REACT_APP_BACKEND+'/auth/me').then((response)=>{
+        this.props.dispatch({
+          type:'SET_USER',
+          val:response.data
+        })
+    }).catch((error)=>{
+      console.log(error);
+    })
   }
 
   componentWillReceiveProps(props) {
@@ -61,14 +75,15 @@ class Nav extends Component {
         <Link to='/menu' onMouseLeave={(e)=>{this.shrinkBM(e, 'menu')}} onMouseEnter={(e)=>{this.expandBM(e)}} className='nav-bm-4 nav-bm-selector'>Menu</Link>
         <Link to='/cafes' onMouseLeave={(e)=>{this.shrinkBM(e, 'cafes')}} onMouseEnter={(e)=>{this.expandBM(e)}} className='nav-bm-5 nav-bm-selector'>Cafes Near You</Link>
         <Link to='/request' onMouseLeave={(e)=>{this.shrinkBM(e, 'request')}} onMouseEnter={(e)=>{this.expandBM(e)}} className='nav-bm-6 nav-bm-selector'>Store Request</Link>
-        <div onMouseLeave={(e)=>{this.shrinkBM(e)}} onMouseEnter={(e)=>{this.expandBM(e)}} className='nav-bm-7 nav-bm-selector'>Log In</div>
+        <a href={ENV.REACT_APP_BACKEND+'/auth'} onMouseLeave={(e)=>{this.shrinkBM(e)}} onMouseEnter={(e)=>{this.expandBM(e)}} className='nav-bm-7 nav-bm-selector'>Log In</a>
       </main>
     )
   }
 }
 function mapStateToProps(state) {
   return {
-    mountedComp:state.mountedComp
+    mountedComp:state.mountedComp,
+    user: state.sessionUser
   }
 }
 export default connect(mapStateToProps)(Nav);
