@@ -1,0 +1,166 @@
+.Profile {
+  background: url('../../Images/Backgrounds/component-bg.png') no-repeat center center;
+  display: grid;
+  grid-area: 2 / 1;
+  background-size: cover;
+  align-content: flex-start;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100%;
+}
+.profile-header-logout {
+  display: grid;
+  grid-area: 1 / 4;
+  align-items: center;
+  text-shadow: 1px 1px black, -1px -1px gray;
+  cursor: pointer;
+  user-select: none;
+  font-size: 36px;
+  color: white;
+  font-family: 'BloggerSansMedium';
+  text-decoration: none;
+}
+.profile-header-profile {
+  display: grid;
+  grid-area: 1 / 3;
+  align-items: center;
+  text-shadow: 1px 1px black, -1px -1px gray;
+  cursor: pointer;
+  user-select: none;
+  font-size: 36px;
+  color: white;
+  font-family: 'BloggerSansMedium';
+  text-decoration: none;
+}
+.profile-container-section {
+  width: 100%;
+  height: 750px;
+}
+.profile-container-div {
+  width: 60%;
+  margin: 20px auto;
+  background: -webkit-linear-gradient(300deg, 
+  #d8e0de 0%,
+  #aebfbc 12%,
+  #99afab 23%,
+  #8ea6a2 50%,
+  #829d98 65%,
+  #4e5c5a 84%,
+  #0e0e0e 100%);
+  border: 5px outset gray;
+  border-radius: 10px;
+  padding: 20px;
+  height: 580px;
+}
+.profile-edit-text {
+  color: maroon;
+  font-family: 'BloggerSansBold';
+  font-size: 14px;
+}
+.profile-first-name-normal, .profile-last-name-normal, .profile-email-normal, .profile-address-normal, .profile-city-normal, .profile-state-normal, .profile-zipcode-normal, .profile-delivery-instructions-normal {
+  text-align: center;
+  width: 80%;
+  margin: 20px auto;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'BloggerSansMedium';
+  font-size: 20px;
+  border-top: #113131 solid 5px;
+  border-bottom: #113131 solid 5px;
+  border-radius: 20px;
+  background: white;
+  cursor: pointer;
+}
+.profile-first-name-edit, .profile-last-name-edit, .profile-email-edit, .profile-address-edit, .profile-city-edit, .profile-state-edit, .profile-zipcode-edit, .profile-delivery-instructions-edit {
+  text-align: center;
+  width: 80%;
+  margin: 20px auto;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  font-family: 'BloggerSansMedium';
+  font-size: 20px;
+  border-top: #113131 solid 5px;
+  border-bottom: #113131 solid 5px;
+  border-radius: 20px;
+  background: white;
+  flex-direction: column;
+}
+.profile-first-name-title, .profile-last-name-title, .profile-email-title, .profile-address-title, .profile-city-title, .profile-state-title, .profile-zipcode-title, .profile-delivery-instructions-title {
+  margin-top: 3px; 
+}
+.profile-first-name-input, .profile-last-name-input, .profile-email-input, .profile-address-input, .profile-city-input, .profile-state-input, .profile-zipcode-input, .profile-delivery-instructions-input {
+  opacity: 0;
+  display: none;
+  margin-top: 8px;
+  font-family: 'BloggerSansMedium';
+  width: 90%;
+  resize: none;
+  outline: none;
+  border-radius: 5px;
+  border: 2px inset #113131;
+  padding: 3px;
+}
+.profile-buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 2px;
+}
+.profile-save-button {
+  opacity: 0;
+  cursor: pointer;
+  display: none;
+}
+.profile-cancel-button {
+  opacity: 0;
+  cursor: pointer;
+  display: none;
+}
+.mobile-header-profile {
+  color: black;
+  position: absolute;
+  top: 66px;
+  background: #731717;
+  width: 150px;
+  text-align: center;
+  border-left: #1f2424 solid 3px;
+  border-right: #1f2424 solid 3px;
+  overflow: hidden;
+  display: none;
+  height: 0px;
+  margin-left: -50px;
+}
+.mobile-header-profile .mobile-selector {
+  border-bottom: #110101 solid 3px;
+  cursor: pointer;
+  padding: 5px;
+  height: 100px;
+}
+@media (max-width:700px) {
+  .profile-header-profile {
+    font-size: 20px;
+    width: 150px;
+    margin-left: -20px;
+    text-decoration: underline;
+    position: relative;
+  }
+  .mobile-header-profile {
+    display: flex;
+    flex-direction: column;
+  }
+  .profile-header-logout {
+    font-size: 20px;
+    width: 150px;
+    margin-left: -20px;
+  }
+  .profile-first-name-title, .profile-last-name-title, .profile-email-title, .profile-address-title, .profile-city-title, .profile-state-title, .profile-zipcode-title, .profile-delivery-instructions-title {
+    font-size: 14px;
+  }
+  .profile-first-name-normal, .profile-last-name-normal, .profile-email-normal, .profile-address-normal, .profile-city-normal, .profile-state-normal, .profile-zipcode-normal, .profile-delivery-instructions-normal {
+    font-size: 14px;
+  }
+}

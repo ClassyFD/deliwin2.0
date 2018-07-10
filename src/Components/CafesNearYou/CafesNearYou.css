@@ -1,0 +1,83 @@
+.CafesNearYou {
+  background: url('../../Images/Backgrounds/component-bg.png') no-repeat center center;
+  display: grid;
+  grid-area: 2 / 1;
+  background-size: cover;
+  align-content: flex-start;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100%;
+}
+.map-container-section {
+  height: 450px;
+  width: 60%;
+  margin: 20px auto;
+  border: 5px inset #113131;
+}
+.map-location-section {
+  background: -webkit-linear-gradient(300deg, 
+  #d8e0de 0%,
+  #aebfbc 12%,
+  #99afab 23%,
+  #8ea6a2 50%,
+  #829d98 65%,
+  #4e5c5a 84%,
+  #0e0e0e 100%);
+  border: 5px outset gray;
+  border-radius: 10px;
+  height: 300px;
+  width: 70%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.map-location-title {
+  font-size: 30px;
+  font-family: 'BloggerSansBold';
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.cafes-coords-bottom {
+  font-family: 'BloggerSansMedium';
+  font-size: 25px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.coords-failed-title {
+  font-size: 24px;
+  font-family: 'BloggerSansMedium';
+}
+.coords-failed-subtitle {
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: 'BloggerSansMedium';
+}
+.coords-loading {
+  font-size: 24px;
+  font-family: 'BloggerSansMedium';
+}
+@media (max-width:700px) {
+  .map-container-section {
+    width: 90%;
+  }
+  .map-location-section {
+    width: 90%;
+    height: 300px;
+    margin-bottom: 300px;
+  }
+  .map-location-title {
+    font-size: 24px;
+  }
+  .cafes-coords-bottom {
+    font-size: 20px;
+  }
+}

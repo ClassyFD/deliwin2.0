@@ -1,0 +1,110 @@
+.Landing {
+  background: url('../../Images/Backgrounds/landing-bg.png') no-repeat center left fixed;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  z-index: 1;
+}
+.landing-title-section {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  grid-template: 150px 70px / 80% 15%;
+  position: relative;
+  bottom: 50px;
+  cursor: pointer;
+  user-select: none;
+}
+.landing-title {
+  font-family: 'BloggerSansBold';
+  font-size: 150px;
+  display: grid;
+  grid-area: 1 / 1;
+}
+.landing-subtitle {
+  font-family: 'BloggerSansBold';
+  font-size: 70px;
+  display: grid;
+  grid-area: 2 / 1;
+  justify-content: space-around;
+  margin-left: 100px;
+}
+.landing-arrow {
+  display: grid;
+  grid-area: 1 / 2;
+  align-content: flex-end;
+  justify-content: flex-start;
+  line-height: 98px;
+  position: relative;
+  grid-template:  auto / 40px 40px 40px;
+  align-items: center;
+  justify-items: center;
+}
+.landing-arrow-1, .landing-arrow-2, .landing-arrow-3 {
+  background: url('../../Images/Icons/right-arrow-icon.png') no-repeat center center;
+  background-size: cover;
+  height: 90px;
+  width: 90px;
+  position: relative;
+  margin-left: -50px;
+}
+.landing-arrow-1 {
+height: 0px;
+width: 0px;
+}
+.landing-arrow-3 {
+  height: 90px;
+  width: 90px;
+}
+@media (max-width:768px) {
+  .Landing {
+    background: url('../../Images/Mobile/landing-mobile-bg.png') no-repeat center center fixed;
+    background-size: cover;
+  }
+  .landing-title-section {
+    grid-template:  140px 70px 50px / 100%;
+  }
+  .landing-title {
+    font-size: 140px;
+  }
+  .landing-subtitle {
+    font-size: 70px;
+    margin: 0;
+  }
+  .landing-arrow {
+    font-size: 100px;
+    line-height: 65px;
+    grid-area: 3 / 1;
+    justify-content: center;
+    position: relative;
+    top: 40px;
+  }
+}
+@media (max-width:468px) {
+  .Landing {
+    background: url('../../Images/Mobile/landing-mobile-bg.png') no-repeat center center fixed;
+    background-size: cover;
+  }
+  .landing-title-section {
+   grid-template:  100px 50px 50px / 100%;
+  }
+  .landing-title {
+    font-size: 100px;
+  }
+  .landing-subtitle {
+    font-size: 50px;
+    margin: 0;
+  }
+  .landing-arrow {
+    font-size: 100px;
+    line-height: 90px;
+    grid-area: 3 / 1;
+    justify-content: center;
+    position: relative;
+    top: 40px;
+  }
+}

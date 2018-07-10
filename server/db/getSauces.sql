@@ -1,0 +1,2 @@
+SELECT * FROM sauces
+ORDER BY name ASC;

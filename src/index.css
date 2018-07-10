@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'BloggerSansMedium';
+  font-weight: normal;
+  src: url('./Fonts/BloggerSansMedium.ttf') format('truetype');
+}
+@font-face {
+  font-family: "BloggerSansBold";
+  font-weight: bold;
+  src: url("./Fonts/BloggerSansBold.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'FuturaBold';
+  font-weight: bold;
+  src: url('./Fonts/FuturaBold.otf') format('opentype');
+}
+@font-face {
+  font-family: 'FuturaMedium';
+  font-weight: 500;
+  src: url('./Fonts/FuturaMedium.otf') format('opentype');
+}
+@font-face {
+  font-family: 'FuturaRegular';
+  font-weight: normal;
+  src: url('./Fonts/FuturaRegular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'GeorgiaRegular';
+  font-weight: normal;
+  src: url('./Fonts/GeorgiaRegular.ttf') format('truetype');
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow: hidden;
+}

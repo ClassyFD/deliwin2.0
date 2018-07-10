@@ -1,0 +1,2 @@
+SELECT * FROM sides
+ORDER BY name ASC;

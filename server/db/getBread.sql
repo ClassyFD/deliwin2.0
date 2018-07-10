@@ -1,0 +1,2 @@
+SELECT * FROM bread
+ORDER BY name ASC;

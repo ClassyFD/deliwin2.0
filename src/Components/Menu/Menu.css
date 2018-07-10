@@ -1,0 +1,441 @@
+.Menu {
+  background: url('../../Images/Backgrounds/component-bg.png') no-repeat center center;
+  display: grid;
+  grid-area: 2 / 1;
+  background-size: cover;
+  align-content: flex-start;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100%;
+}
+.menu-container-section {
+  width: 60%;
+  display: grid;
+  justify-self: center;
+  grid-template: auto / 106px auto 106px;
+}
+.menu-food-container {
+  display: grid; 
+  grid-area: 1 / 1;
+  align-content: flex-start;
+}
+.menu-sandwiches-icon {
+  background: url('../../Images/Icons/sandwiches-icon.png') no-repeat center center gray;
+}
+.menu-bread-icon {
+  background: url('../../Images/Icons/bread-icon.png') no-repeat center center gray;
+}
+.menu-sides-icon {
+  background: url('../../Images/Icons/sides-icon.png') no-repeat center center gray;
+}
+.menu-drinks-icon {
+  background: url('../../Images/Icons/drinks-icon.png') no-repeat center center gray;
+}
+.menu-sauces-icon {
+  background: url('../../Images/Icons/sauces-icon.png') no-repeat center center gray;
+}
+.menu-sandwiches-icon, .menu-bread-icon, .menu-sides-icon, .menu-drinks-icon, .menu-sauces-icon {
+  height: 100px;
+  width: 100px;
+  border: #113131 3px ridge;
+  background-size: cover;
+  cursor: pointer;
+}
+.menu-sidebar-container {
+  display: grid;
+  grid-area: 1 / 3;
+  align-content: flex-start;
+}
+.menu-sidebar-all-sandwiches, .menu-sidebar-all-bread, .menu-sidebar-hispanic-bread, .menu-sidebar-vietnamese-bread, 
+.menu-sidebar-all-sides, .menu-sidebar-all-drinks, .menu-sidebar-hot-drinks, .menu-sidebar-cold-drinks, .menu-sidebar-fountain-drinks, 
+.menu-sidebar-all-sauces, .menu-sidebar-sweet-sauces, .menu-sidebar-classic-sauces {
+  height: 100px;
+  width: 100px;
+  border: #113131 3px ridge;
+  background: gray;
+  background-size: cover;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'BloggerSansMedium';
+  font-size: 20px;
+  user-select: none;
+}
+.menu-sidebar-all-sandwiches, .menu-sidebar-all-sides {
+  background: white;
+}
+.menu-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+}
+.food-container {
+  background: url('../../Images/Backgrounds/table.jpg') no-repeat center center;
+  background-size: cover;
+  height: 230px;
+  width: 196px;
+  border: 3px ridge #113131;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.food-name {
+  font-family: 'BloggerSansBold';
+  font-size: 18px;
+}
+.food-price {
+  font-family: 'BloggerSansMedium';
+}
+.food-line {
+height: 2px;
+border-top: 2px ridge gray;
+width: 100px;
+background:black;
+}
+.food-add-toppings {
+  background-size: cover;
+  height: 35px;
+  font-size: 18px;
+  font-family: 'BloggerSansMedium';
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.food-bottom {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(top,
+  #450404 0,
+  #4c4b5c 0,
+  #943939 1%,
+  #8f3131 5%,
+  #521010 13%,
+  #731717 91%,
+  #611515 92%,
+  #5e1212 93%,
+  #1f2424);
+  color: whitesmoke;
+  align-items: center;
+  cursor: pointer;
+}
+.food-add-to-cart {
+  background: url('../../Images/Icons/add-to-cart-icon.png') no-repeat center center;
+  background-size: cover;
+  height: 28px;
+  width: 28px;
+  cursor: pointer;
+}
+.french-dip {
+  background: url('../../Images/Sandwiches/french-dip.png') no-repeat center center;
+}
+.club {
+  background: url('../../Images/Sandwiches/club.png') no-repeat center center;
+}
+.philly-cheesesteak {
+  background: url('../../Images/Sandwiches/philly-cheesesteak.png') no-repeat center center;
+}
+.grilled-chicken {
+  background: url('../../Images/Sandwiches/grilled-chicken.png') no-repeat center center;
+}
+.blt {
+  background: url('../../Images/Sandwiches/blt.png') no-repeat center center;
+}
+.ham-and-cheese {
+  background: url('../../Images/Sandwiches/ham-and-cheese.png') no-repeat center center;
+}
+.crispy-chicken {
+  background: url('../../Images/Sandwiches/crispy-chicken.png') no-repeat center center;
+}
+.grilled-cheese {
+  background: url('../../Images/Sandwiches/grilled-cheese.png') no-repeat center center;
+}
+.concha {
+  background: url('../../Images/Bread/concha.png') no-repeat center center;
+}
+.cuerno {
+  background: url('../../Images/Bread/cuerno.png') no-repeat center center;
+}
+.elotito {
+  background: url('../../Images/Bread/elotito.png') no-repeat center center;
+}
+.empanada {
+  background: url('../../Images/Bread/empanada.png') no-repeat center center;
+}
+.galleta {
+  background: url('../../Images/Bread/galleta.png') no-repeat center center;
+}
+.ojo-de-buey {
+  background: url('../../Images/Bread/ojo-de-buey.png') no-repeat center center;
+}
+.oreja {
+  background: url('../../Images/Bread/oreja.png') no-repeat center center;
+}
+.polvoron {
+  background: url('../../Images/Bread/polvoron.png') no-repeat center center;
+}
+.red-bean-bun {
+  background: url('../../Images/Bread/red-bean-bun.png') no-repeat center center;
+}
+.coconut-tart {
+  background: url('../../Images/Bread/coconut-tart.png') no-repeat center center;
+}
+.vanilla-buttercream {
+  background: url('../../Images/Bread/vanilla-buttercream.png') no-repeat center center;
+}
+.chocolate-buttercream {
+  background: url('../../Images/Bread/chocolate-buttercream.png') no-repeat center center;
+}
+.spring-onion-hotdog {
+  background: url('../../Images/Bread/spring-onion-hotdog.png') no-repeat center center;
+}
+.spring-onion-bun {
+  background: url('../../Images/Bread/spring-onion-bun.png') no-repeat center center;
+}
+.custard-bun {
+  background: url('../../Images/Bread/custard-bun.png') no-repeat center center;
+}
+.lotus-pastry {
+  background: url('../../Images/Bread/lotus-pastry.png') no-repeat center center;
+}
+.pineapple-pastry {
+  background: url('../../Images/Bread/pineapple-pastry.png') no-repeat center center;
+}
+.red-bean-pastry {
+  background: url('../../Images/Bread/red-bean-pastry.png') no-repeat center center;
+}
+.taro-pastry {
+  background: url('../../Images/Bread/taro-pastry.png') no-repeat center center;
+}
+.chips {
+  background: url('../../Images/Sides/chips.png') no-repeat center center;
+}
+.cookies {
+  background: url('../../Images/Sides/cookies.png') no-repeat center center;
+}
+.curly-fries {
+  background: url('../../Images/Sides/curly-fries.png') no-repeat center center;
+}
+.fries {
+  background: url('../../Images/Sides/fries.png') no-repeat center center;
+}
+.onion-rings {
+  background: url('../../Images/Sides/onion-rings.png') no-repeat center center;
+}
+.sweet-potato-fries {
+  background: url('../../Images/Sides/sweet-potato-fries.png') no-repeat center center;
+}
+.tater-tots {
+  background: url('../../Images/Sides/tater-tots.png') no-repeat center center;
+}
+.waffle-fries {
+  background: url('../../Images/Sides/waffle-fries.png') no-repeat center center;
+}
+.bubble-tea {
+  background: url('../../Images/Drinks/bubble-tea.png') no-repeat center center;
+}
+.cappuccino {
+  background: url('../../Images/Drinks/cappuccino.png') no-repeat center center;
+}
+.coke {
+  background: url('../../Images/Drinks/coke.png') no-repeat center center;
+}
+.dr-pepper {
+  background: url('../../Images/Drinks/dr-pepper.png') no-repeat center center;
+}
+.fanta {
+  background: url('../../Images/Drinks/fanta.png') no-repeat center center;
+}
+.float {
+  background: url('../../Images/Drinks/float.png') no-repeat center center;
+}
+.frappe {
+  background: url('../../Images/Drinks/frappe.png') no-repeat center center;
+}
+.green-tea {
+  background: url('../../Images/Drinks/green-tea.png') no-repeat center center;
+}
+.hi-c {
+  background: url('../../Images/Drinks/hi-c.png') no-repeat center center;
+}
+.hot-chocolate {
+  background: url('../../Images/Drinks/hot-chocolate.png') no-repeat center center;
+}
+.iced-coffee {
+  background: url('../../Images/Drinks/iced-coffee.png') no-repeat center center;
+}
+.iced-tea {
+  background: url('../../Images/Drinks/iced-tea.png') no-repeat center center;
+}
+.latte {
+  background: url('../../Images/Drinks/latte.png') no-repeat center center;
+}
+.milk {
+  background: url('../../Images/Drinks/milk.png') no-repeat center center;
+}
+.mountain-dew {
+  background: url('../../Images/Drinks/mountain-dew.png') no-repeat center center;
+}
+.roast-coffee {
+  background: url('../../Images/Drinks/roast-coffee.png') no-repeat center center;
+}
+.root-beer {
+  background: url('../../Images/Drinks/root-beer.png') no-repeat center center;
+}
+.sprite {
+  background: url('../../Images/Drinks/sprite.png') no-repeat center center;
+}
+.sweet-tea {
+  background: url('../../Images/Drinks/sweet-tea.png') no-repeat center center;
+}
+.unsweet-tea {
+  background: url('../../Images/Drinks/unsweet-tea.png') no-repeat center center;
+}
+.bbq {
+  background: url('../../Images/Sauces/bbq.png') no-repeat center center;
+}
+.blackberry {
+  background: url('../../Images/Sauces/blackberry.png') no-repeat center center;
+}
+.blueberry {
+  background: url('../../Images/Sauces/blueberry.png') no-repeat center center;
+}
+.buffalo {
+  background: url('../../Images/Sauces/buffalo.png') no-repeat center center;
+}
+.caramel {
+  background: url('../../Images/Sauces/caramel.png') no-repeat center center;
+}
+.cherry {
+  background: url('../../Images/Sauces/cherry.png') no-repeat center center;
+}
+.chocolate {
+  background: url('../../Images/Sauces/chocolate.png') no-repeat center center;
+}
+.garlic {
+  background: url('../../Images/Sauces/garlic.png') no-repeat center center;
+}
+.honey-mustard {
+  background: url('../../Images/Sauces/honey-mustard.png') no-repeat center center;
+}
+.hot-fudge {
+  background: url('../../Images/Sauces/hot-fudge.png') no-repeat center center;
+}
+.ketchup {
+  background: url('../../Images/Sauces/ketchup.png') no-repeat center center;
+}
+.mayo {
+  background: url('../../Images/Sauces/mayo.png') no-repeat center center;
+}
+.mustard {
+  background: url('../../Images/Sauces/mustard.png') no-repeat center center;
+}
+.orange {
+  background: url('../../Images/Sauces/orange.png') no-repeat center center;
+}
+.peanut-butter {
+  background: url('../../Images/Sauces/peanut-butter.png') no-repeat center center;
+}
+.ranch {
+  background: url('../../Images/Sauces/ranch.png') no-repeat center center;
+}
+.raspberry {
+  background: url('../../Images/Sauces/raspberry.png') no-repeat center center;
+}
+.strawberry {
+  background: url('../../Images/Sauces/strawberry.png') no-repeat center center;
+}
+.sweet-and-sour {
+  background: url('../../Images/Sauces/sweet-and-sour.png') no-repeat center center;
+}
+.sweet-and-spicy {
+  background: url('../../Images/Sauces/sweet-and-spicy.png') no-repeat center center;
+}
+.vanilla {
+  background: url('../../Images/Sauces/vanilla.png') no-repeat center center;
+}
+
+.blt, .club, .crispy-chicken, .french-dip, .grilled-cheese, .grilled-chicken, .ham-and-cheese, .philly-cheesesteak, 
+.chocolate-buttercream, .coconut-tart, .concha, .cuerno, .custard-bun, .elotito, .empanada, .galleta, .lotus-pastry, 
+.ojo-de-buey, .oreja, .pineapple-pastry, .polvoron, .red-bean-bun, .red-bean-pastry, .spring-onion-bun, .spring-onion-hotdog, 
+.taro-pastry, .vanilla-buttercream, .chips, .cookies, .curly-fries, .fries, .onion-rings, .sweet-potato-fries, .tater-tots, 
+.waffle-fries {
+  height: 100px;
+  width: 146px;
+  background-size: cover;
+}
+.coke, .dr-pepper, .fanta, .mountain-dew, .root-beer, .sprite {
+  height: 100px;
+  width: 72px;
+  background-size: cover;
+}
+.bubble-tea, .float, .frappe, .green-tea, .hi-c, .iced-coffee, .iced-tea, .milk, .sweet-tea, .unsweet-tea {
+  height: 100px;
+  width: 68px;
+  background-size: cover;
+}
+.roast-coffee, .cappuccino, .hot-chocolate, .latte {
+  height: 100px;
+  width: 145px;
+  background-size: cover;
+}
+.blackberry, .blueberry, .cherry, .chocolate, .orange, .peanut-butter, .raspberry, .strawberry, .vanilla {
+  height: 100px;
+  width: 100px;
+  background-size: cover;
+}
+.hot-fudge, .caramel, .ketchup, .mayo, .mustard, .ranch, .sweet-and-sour, .sweet-and-spicy, .garlic, .honey-mustard, 
+.bbq, .buffalo {
+  height: 100px;
+  width: 49px;
+  background-size: cover;
+}
+@media(max-width: 695px) {
+  .menu-container-section {
+    width: 100%;
+    grid-template: auto / 86px auto 86px;
+  }
+  .menu-sidebar-all-sandwiches, .menu-sidebar-all-bread, .menu-sidebar-hispanic-bread, .menu-sidebar-vietnamese-bread, 
+  .menu-sidebar-all-sides, .menu-sidebar-all-drinks, .menu-sidebar-hot-drinks, .menu-sidebar-cold-drinks, .menu-sidebar-fountain-drinks, 
+  .menu-sidebar-all-sauces, .menu-sidebar-sweet-sauces, .menu-sidebar-classic-sauces {
+    width: 80px;
+    height: 80px;
+    font-size: 14px;
+  }
+  .menu-sandwiches-icon, .menu-bread-icon, .menu-sides-icon, .menu-drinks-icon, .menu-sauces-icon {
+    height: 80px;
+    width: 80px;
+  }
+}
+.menu-loading {
+  background: white;
+  text-align: center;
+  padding-top: 20px;
+  font-family: 'BloggerSansBold';
+  font-family: 20px;
+}
+.menu-loading-title {
+  font-family: 'BloggerSansBold';
+  font-family: 20px;
+}
+.menu-failed {
+  background: white;
+  text-align: center;
+  padding-top: 20px;
+  font-family: 'BloggerSansBold';
+  font-family: 20px;
+}
+.menu-failed-title {
+  font-family: 'BloggerSansBold';
+  font-family: 20px;
+}
+.menu-failed-subtitle {
+  font-family: 'BloggerSansMedium';
+  font-family: 14px;
+  margin-top: 10px;
+}

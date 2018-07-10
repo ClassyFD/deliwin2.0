@@ -1,0 +1,76 @@
+.Nav {
+  height: 100vh;
+  width: 453px;
+  display: grid; 
+  grid-area: 2 / 1;
+  z-index: 1;
+  position: relative;
+  grid-template: auto auto auto auto auto auto auto / 100%;
+  z-index: 2;
+  margin-left: -363px;
+}
+.nav-bm-1 {
+  display: grid;
+  grid-area: 1 / 1;
+  background: url('../../Images/Bookmarks/bookmark-1.png') no-repeat center right;
+  background-size: cover;
+  position: relative;
+}
+.nav-bm-2 {
+  display: grid;
+  grid-area: 2 / 1;
+  background: url('../../Images/Bookmarks/bookmark-2.png') no-repeat center right;
+  background-size: cover;
+  position: relative;
+}
+.nav-bm-3 {
+  display: grid;
+  grid-area: 3 / 1;
+  background: url('../../Images/Bookmarks/bookmark-3.png') no-repeat center right;
+  background-size: cover;
+  position: relative;
+}
+.nav-bm-4 {
+  display: grid;
+  grid-area: 4 / 1;
+  background: url('../../Images/Bookmarks/bookmark-4.png') no-repeat center right;
+  background-size: cover;
+  position: relative;
+}
+.nav-bm-5 {
+  display: grid;
+  grid-area: 5 / 1;
+  background: url('../../Images/Bookmarks/bookmark-5.png') no-repeat center right;
+  background-size: cover;
+  position: relative;
+}
+.nav-bm-6 {
+  display: grid;
+  grid-area: 6 / 1;
+  background: url('../../Images/Bookmarks/bookmark-6.png') no-repeat center right;
+  background-size: cover;
+  position: relative;
+}
+.nav-bm-7 {
+  display: grid;
+  grid-area: 7 / 1;
+  background: url('../../Images/Bookmarks/bookmark-7.png') no-repeat center right;
+  background-size: cover;
+  position: relative;
+}
+.nav-bm-selector {
+  font-size: 24px;
+  line-height: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-family: 'BloggerSansBold';
+  text-shadow: 1px 1px black, -1px -1px gray;
+}
+@media (max-width: 700px) {
+  .Nav {
+    display: none;
+  }
+}

@@ -1,0 +1,131 @@
+.ShoppingCart {
+  position: fixed;
+  bottom:0;
+  right: 0;
+  border: ridge #113131 2px;
+}
+.cart-header-section {
+  height: 40px;
+  width: 100px;
+  background: linear-gradient(top,
+  #450404 0,
+  #4c4b5c 0,
+  #943939 1%,
+  #8f3131 5%,
+  #521010 13%,
+  #731717 91%,
+  #611515 92%,
+  #5e1212 93%,
+  #1f2424);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'BloggerSansBold';
+  font-size: 20px;
+  cursor: pointer;
+  user-select: none;
+  color: whitesmoke;
+}
+.cart-body-section {
+  width: 100px;
+  height: 0px;
+  overflow: hidden;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cart-body-contents {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.cart-body-element {
+  display: grid;
+  grid-template: auto / 10px 30px 120px 30px 10px;
+  align-items: center;
+  min-height: 40px;
+  font-family: 'BloggerSansMedium';
+  background: white;
+  cursor: pointer;
+  align-content: center;
+  user-select: none;
+}
+.cart-element-number {
+  text-align: center;
+  grid-area: 1 / 2;
+  font-family: 'BloggerSansBold';
+}
+.cart-element-name {
+  text-align: center;
+  grid-area: 1 / 3;
+}
+.cart-element-price {
+  text-align: center;
+  grid-area: 1 / 4;
+}
+.cart-body-header {
+  height: 50px;
+  display: grid;
+  grid-template: auto / 10px 30px 115px 30px ;
+  font-family: 'FuturaBold';
+  border-bottom: 2px solid #113131;
+  align-items: center;
+}
+.cart-header-number {
+  text-align: center;
+  display: grid;
+  grid-area: 1 / 2;
+}
+.cart-header-name {
+  text-align: center;
+  display: grid;
+  grid-area: 1 / 3;
+}
+.cart-header-price {
+  text-align: center;
+  display: grid;
+  grid-area: 1 / 4;
+}
+.cart-body-footer {
+  height: 50px;
+  border-top: solid 2px #113311;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(top,
+  #450404 0,
+  #4c4b5c 0,
+  #943939 1%,
+  #8f3131 5%,
+  #521010 13%,
+  #731717 91%,
+  #611515 92%,
+  #5e1212 93%,
+  #1f2424);
+  color: whitesmoke;
+  text-decoration: none;
+}
+.cart-footer-checkout-text {
+  font-family: 'BloggerSansBold';
+  font-size: 20px;
+  cursor: pointer;
+  user-select: none;
+}
+.cart-footer-checkout-icon {
+  background: url('../../Images/Icons/checkout-icon.png') no-repeat center center;
+  background-size: cover;
+  height: 25px;
+  width: 25px;
+}
+.cart-total {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 2px ridge #113131;
+  font-family: 'BloggerSansBold';
+}

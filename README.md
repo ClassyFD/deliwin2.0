@@ -1,0 +1,1 @@
+Run npm install after cloning the repo and cd into app Everything should be set except for the .env file, add this to your server folder and set the variables you need First spin up the server with node server/server.js Then run the client with npm start
