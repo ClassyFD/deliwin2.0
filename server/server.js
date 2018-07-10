@@ -9,11 +9,10 @@ const path = require('path'),
       auth0Strategy = require('passport-auth0'),
       env = require('dotenv').config({path: './server/config/.env'}),
       app = express(),
-      port = 3001;
+      port = 3000;
       
-app.use(express.static(__dirname + '/../build'))
 app.use(cors());
-app.use(bodyParser.json());
+app.use(bodyParser.json({limit: '50mb'}));
 
 const corsOptions = {
   origin: function (origin, callback) {
@@ -47,6 +46,7 @@ app.use(session({
   saveUninitialized: false,
 }));
 
+app.use(express.static(__dirname + '/../build')); 
 // auth0 section
 
 app.use(passport.initialize());
@@ -158,9 +158,9 @@ app.get('/auth/logout/', (req, res) => {
 })
 
 // finish
-app.get('*', (req,res)=>{
-  console.log('testing')
-  res.sendFile(path.join(__dirname, '../build/index.html'))
+app.get('*', (req, res)=>{
+  console.log(req.originalUrl)
+  res.sendFile(path.join(__dirname, '../build/index.html'));
 })
 
 app.listen(port, ()=> console.log(`listening on port ${port}`));

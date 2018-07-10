@@ -3,8 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "main": "server/server.js",
-  "proxy": "http://deliwin.host",
-  "homepage": "https://localhost:3000/deliwin/",
+  "proxy": "http://localhost:3000",
   "dependencies": {
     "assemble": "^0.24.3",
     "aws-sdk": "^2.166.0",
@@ -37,8 +36,6 @@
     "react-scripts": "1.0.10"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
